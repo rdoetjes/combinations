@@ -9,6 +9,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     chars = list(sys.argv[1])
-    combs = list(itertools.permutations(chars))
+    combs = list(set(itertools.permutations(chars)))
+
     for comb in combs:
         print("".join(comb))
