@@ -10,6 +10,6 @@ if __name__ == "__main__":
 
     chars = list(sys.argv[1])
     combs = list(set(itertools.permutations(chars)))
-
+    combs.sort()
     for comb in combs:
         print("".join(comb))
