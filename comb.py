@@ -11,5 +11,8 @@ if __name__ == "__main__":
     chars = list(sys.argv[1])
     combs = list(set(itertools.permutations(chars)))
     combs.sort()
+
+    n = 1
     for comb in combs:
-        print("".join(comb))
+        print(str(n)+": "+ "".join(comb))
+        n+=1
